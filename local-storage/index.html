@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>local storage</title>
+</head>
+<body>
+    <h1>welcome</h1>
+    <input type="text" id="input" placeholder="username">
+    <button id="enter-btn" onclick="change()">enter</button>
+    <script>
+        let btn = document.getElementById("enter-btn")
+        let title = document.querySelector("h1")
+        let input = document.getElementById("input")
+        function change()
+        {
+            var name = input.value
+            localStorage.setItem("username",name)
+            title.textContent = "welcome "+name
+            input.value = ""
+           
+        }
+        /*summa commenting */
+        if(!localStorage.getItem("username"))
+        {
+            change()
+        }
+        else
+        {
+            var name = localStorage.getItem("username")
+            title.textContent = "welcome "+name
+        }
+
+    </script>
+</body>
+</html>
