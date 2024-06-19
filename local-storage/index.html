@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>local storage</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>welcome</h1>
-    <input type="text" id="input" placeholder="username">
-    <button id="enter-btn" onclick="change()">enter</button>
+    
+    <div class="wrap">  
+        <h1>WELCOME</h1>
+        <input type="text" id="input" placeholder="TITLE NAME">
+    <button id="enter-btn" onclick="change()" >ENTER</button>
+    </div>
+    
     <script>
         let btn = document.getElementById("enter-btn")
         let title = document.querySelector("h1")
@@ -17,7 +22,7 @@
         {
             var name = input.value
             localStorage.setItem("username",name)
-            title.textContent = "welcome "+name
+            title.textContent = "WELCOME "+name
             input.value = ""
            
         }
@@ -29,7 +34,7 @@
         else
         {
             var name = localStorage.getItem("username")
-            title.textContent = "welcome "+name
+            title.textContent = "WELCOME "+name
         }
 
     </script>
