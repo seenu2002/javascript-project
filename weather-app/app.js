@@ -1,4 +1,4 @@
-const apiKey = '5109016307dc2e3650c5733a78f90688'; // Replace with your actual API key
+const apiKey = '5109016307dc2e3650c5733a78f90688';
 
 const main = document.getElementById('main');
 const form = document.getElementById('form');
@@ -30,7 +30,7 @@ function addWeatherToPage(data) {
         <small>${data.weather[0].main}</small>
     `;
 
-    // Cleanup
+
     main.innerHTML = '';
     main.appendChild(weather);
 }
