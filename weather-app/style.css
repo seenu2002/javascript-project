@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: "Poppins", sans-serif;
-    background-color: linear-gradiet(300deg, #878275, #909d9d);
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     display: flex;
     justify-content: center;
     align-items: center;
